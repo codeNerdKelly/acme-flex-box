@@ -1,0 +1,46 @@
+body {
+    margin: 0;
+    padding-top: 0;
+    font-family: 'Lato', sans-serif;
+}
+
+header {
+    background-color: dodgerblue;
+    padding: 0 2rem;
+}
+
+h1 {
+    color: white;
+    position: relative;
+    font-size: 36px;
+    top: 25px;
+    line-height: 100%;
+}
+
+.menu {
+    display: flex;
+    justify-content: space-evenly;    
+    position: relative;
+    bottom: 25px;
+    left: 140px;
+}
+
+.menu a {
+    text-decoration: none;
+    color: white;
+    font-size: 18px;
+}
+
+.menu a:hover{
+    cursor: pointer;
+    font-size: 24px;
+    font-weight: 700;
+    transition: all 150ms ease-in-out;
+}
+
+nav div:first-child {
+    font-weight: bold;
+}
+
+
+
