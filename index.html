@@ -24,7 +24,38 @@
             
         </nav>
     </header>
-
-    
+    <div class="conatiner">
+    <h2>Users</h2>
+    <div class = "create-user">
+        <form>
+            <h2>Create A User</h2>
+            <div class="create-user-form">
+            <label for = "first-name">First Name</label>
+            <input type = "text" name = "first-name" placeholder = "Dua" id = "first"/>
+            </div>
+            <div class="create-user-form">
+            <label for = "last-name">Last Name</label>
+            <input type = "text" name = "last-name" placeholder = "Lipa" id = "last"/>
+            </div>
+            <div class="create-user-form">
+            <label for = "department">Department</label>
+            <select name = "dept" id = "dept-select">
+                <option value = "--none--">--None--</option>
+                <option value = "Art">Art</option>
+                <option value = "Design">Design</option>
+                <option value = "Engineering">Engineering</option>
+            </select>
+        </div>
+        <div class="btn">
+            <a class="clear-btn-link" href = "#" role = "button">
+            <button type = "button" class = "clear" value = "Clear" id="clear-btn">Clear</button>
+            </a>
+            <a class="save-btn-link" href = "#" role = "button">
+            <button type = "button" class = "save" value = "Save" id = "save-btn">Save</button>
+        </a>
+        </div>
+        </form>
+    </div>
+</div>
 </body>
 </html>
