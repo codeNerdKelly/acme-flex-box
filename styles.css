@@ -47,11 +47,6 @@ nav div:first-child {
     font-weight: bold;
 }
 
-.container {
-    display: flex;
-    
-}
-
 .create-user {
     display: block;
     margin: 0 auto;
@@ -132,3 +127,22 @@ button {
     font-weight: 700;
     padding: 12px 30px;
 }
+
+
+.user-row{
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    justify-content: space-evenly;
+    
+
+}
+
+.user-card {
+   border: solid 1px black;
+   border-radius: 8px;
+   flex: 0 0 30%;
+   margin: 15px 15px; 
+   width: 100px;
+}
+
