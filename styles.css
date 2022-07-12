@@ -164,6 +164,18 @@ button {
 
 @media (max-width: 800px) {
 
+    header{
+        flex-direction: column;
+        flex-wrap: wrap;
+     }
+    .acme-logo {
+        flex: 0;
+        font-size: 22px;
+     }
+
+     .menu{
+        flex: 0;
+     }
     .create-user {
         max-width: 400px;
         height: auto;
@@ -184,12 +196,21 @@ button {
         padding-right: 68px;
     }
 
+    .user-row {
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+    }
+
+    .user-card {
+        flex-basis: 84%
+    }
+
 
 }
 
 @media (max-width: 500px){
  header{
-    flex-direction: column;
     flex-wrap: wrap;
  }
 
@@ -206,7 +227,4 @@ button {
     align-content: flex-start; 
  }
 
- .nav-item {
-    flex: 1;
- }
 }
