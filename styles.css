@@ -5,15 +5,16 @@ body {
 }
 
 header {
+    display: flex;
     background-color: dodgerblue;
     padding: 0 2rem;
 }
 
 .acme-logo {
+    flex: 2;
     color: white;
     position: relative;
     font-size: 36px;
-    top: 15px;
     line-height: 100%;
     text-decoration: none;
     font-weight: bold;
@@ -26,13 +27,17 @@ h2{
 
 .menu {
     display: flex;
-    justify-content: space-evenly;    
-    position: relative;
-    bottom: 25px;
-    left: 140px;
+    flex: 1;
+    justify-content: flex-end; 
+    padding-left: 20%;   
 }
 
-.menu a {
+.nav-item {
+    margin: auto;
+    flex: 3;
+}
+
+.nav-item a {
     text-decoration: none;
     color: white;
     font-size: 18px;
@@ -50,13 +55,17 @@ nav div:first-child {
 }
 
 .create-user {
-    display: block;
-    margin: 0 auto;
+    display: flex;
+    margin: auto;
+    height: 300px;
     max-width: 600px;
     border: solid 1px gray;
     border-radius: 8px;
     padding-left: 15px;
+}
 
+form {
+    margin: auto;
 }
 
 .create-user h2 {
@@ -79,8 +88,6 @@ nav div:first-child {
     margin-left: 43px;
     padding-right: 250px;
     padding-top: 5px;
-    padding-bottom: ;
-
 }
 
 .create-user-form select {
@@ -137,8 +144,6 @@ button {
     flex-direction: row;
     justify-content: space-evenly;
     margin-top: 15px;
-    
-
 }
 
 .user-card {
@@ -148,7 +153,6 @@ button {
    margin: 15px 15px; 
    width: 100px;
    text-align: center;
-   
    padding-bottom: 15px;
 }
 
@@ -156,4 +160,53 @@ button {
     text-align: center;
     color: gray;
     
+}
+
+@media (max-width: 800px) {
+
+    .create-user {
+        max-width: 400px;
+        height: auto;
+    }
+
+    .create-user-form #first {
+        margin-left: 10px;
+        padding-right: 25px;  
+    }
+    
+    .create-user-form #last {
+        margin-left: 12px;
+        padding-right: 25px;
+    }
+    
+    .create-user-form select {
+        margin-left: 12px;
+        padding-right: 68px;
+    }
+
+
+}
+
+@media (max-width: 500px){
+ header{
+    flex-direction: column;
+    flex-wrap: wrap;
+ }
+
+ .acme-logo {
+    font-size: 22px;
+ }
+
+ .menu {
+    position: relative;
+    right: 75px;
+    line-height: 130%;
+    flex-direction: column;
+    flex-wrap: wrap;
+    align-content: flex-start; 
+ }
+
+ .nav-item {
+    flex: 1;
+ }
 }
